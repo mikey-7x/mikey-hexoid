@@ -678,6 +678,7 @@ All Rights Reserved
 
 ----------------------------------------------------------------------
 SECTION 1 — OWNERSHIP
+
 ----------------------------------------------------------------------
 
 “Mikey:hexoid” (including all scripts, code, algorithms, libraries, 
@@ -690,6 +691,7 @@ No rights are granted except those explicitly written below.
 
 ----------------------------------------------------------------------
 SECTION 2 — PERMITTED USE
+
 ----------------------------------------------------------------------
 
 You are allowed to:
@@ -707,6 +709,7 @@ The following MUST remain intact:
 
 ----------------------------------------------------------------------
 SECTION 3 — STRICTLY PROHIBITED ACTIONS
+
 ----------------------------------------------------------------------
 
 Without explicit written permission from the author (Mikey-7X), you 
@@ -724,6 +727,7 @@ Any violation constitutes infringement and may lead to legal action.
 
 ----------------------------------------------------------------------
 SECTION 4 — THIRD-PARTY TOOLS & ATTRIBUTIONS
+
 ----------------------------------------------------------------------
 
 Mikey:hexoid internally uses—and is compatible with—several external
@@ -756,6 +760,7 @@ systems written by Mikey-7X.
 
 ----------------------------------------------------------------------
 SECTION 5 — WARRANTY DISCLAIMER
+
 ----------------------------------------------------------------------
 
 THIS SOFTWARE IS PROVIDED “AS IS,” WITHOUT ANY WARRANTY OF ANY KIND.
@@ -771,6 +776,7 @@ Use of this software is entirely at your own risk.
 
 ----------------------------------------------------------------------
 SECTION 6 — TRADEMARK NOTICE
+
 ----------------------------------------------------------------------
 
 “Mikey:hexoid™” is an unregistered trademark of Mikey-7X.
@@ -783,6 +789,7 @@ You may NOT:
 
 ----------------------------------------------------------------------
 SECTION 7 — REQUESTING PERMISSION
+
 ----------------------------------------------------------------------
 
 To request commercial use rights, redistribution, or collaboration,
@@ -795,6 +802,7 @@ Only written approval is legally valid.
 
 ----------------------------------------------------------------------
 END OF LICENSE
+
 ----------------------------------------------------------------------
 
 This software is protected under international copyright laws.
