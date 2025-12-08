@@ -637,3 +637,69 @@ Mikey:hexoid is built from the idea that
 
 
 ---
+---
+
+## 🧾 Copyright & Authors
+
+**© 2025 Mikey (mikey-7x)**  
+Creator & Lead Developer – *Mikey:hexoid Project*  
+Electronics Engineer (Diploma E&C) | B.Tech Electronics | Embedded Systems Developer
+
+All rights reserved.  
+This project may be used, modified, and distributed under the terms of the **MIT License** (recommended for open-source hardware-software toolchains).
+
+---
+
+## 👨‍💻 Core Developers & Acknowledgements
+
+### 🔷 Primary Developer  
+- **Mikey (mikey-7x)**  
+  - Concept design  
+  - AVR/ST Microcontroller architecture integration  
+  - STM32 Arduino-style Mikey Core  
+  - Build system logic & testing  
+  - Algorithm design for converters (Arduino ↔ STM32)
+
+---
+
+### 🟦 Special Thanks To:
+
+#### **1. Arduino Project & Developers**  
+This project integrates technologies provided by:  
+- **Arduino Team** – for `arduino-cli`, AVR cores, hardware definitions, and open-source toolchains.  
+- **MiniCore, MightyCore, MegaCore, MicroCore** authors  
+  - *MCUdude* → https://github.com/MCUdude  
+  (for ATmega8A, ATmega328P, ATmega32, ATtiny builds)
+
+Their incredible open-source contributions made cross-MCU compilation possible.
+
+#### **2. STM32 Open-Source Contributors**  
+- ARM GCC Toolchain maintainers  
+- STM32 low-level / bare-metal community  
+- libopencm3 contributors  
+
+#### **3. Android Tools Used in Workflow**  
+HEX uploaders on Android (external, optional):
+
+| Tool | Purpose | Play Store Link |
+|------|---------|----------------|
+| **ZFlasher AVR** | Upload HEX to AVR / USBasp / Arduino | https://play.google.com/store/apps/details?id=ru.zdevs.zflasheravr |
+| **STM32 Utils** | Upload HEX/BIN to STM32 (USB/Serial/DFU) | https://play.google.com/store/apps/details?id=com.mmrobotics.stm32utils |
+
+*(These apps are not part of Mikey:hexoid — they are optional flash tools used by many embedded engineers.)*
+
+---
+
+## 🛡 License Notice
+
+This project embeds or interacts with open-source components under their respective licenses:
+
+- Arduino Core & Tools — **LGPL / GPL / Creative Commons**  
+- ARM GCC — **GNU GPL v3**  
+- Python packages (rich, pygments, pyserial) — **MIT**  
+
+All original logic, converters, build systems, STM32 Mikey Core, and CLI system are **© 2025 Mikey**.
+
+Unauthorized commercial use without permission is prohibited.
+
+---
