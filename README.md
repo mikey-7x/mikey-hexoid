@@ -1,5 +1,5 @@
 # ⚡ Mikey:hexoid
-
+![mikey:hexoid](mhex.png)
 > **Multi-MCU HEX compiler toolkit for Arduino, AVR & STM32 – optimized for Termux/Debian on ARM64**
 
 [![Install Mikey:hexoid](https://img.shields.io/badge/Install-Mikey:hexoid-blue?style=for-the-badge&logo=gnubash&color=0b8043)](https://raw.githubusercontent.com/mikey-7x/mikey-hexoid/main/mikey-hexoid-install.sh)
