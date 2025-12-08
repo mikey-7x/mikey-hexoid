@@ -621,8 +621,11 @@ Integrated docs per MCU preset.
 Creator & Lead Developer – *Mikey:hexoid Project*  
 Electronics Engineer (Diploma E&C) | B.Tech Electronics | Embedded Systems Developer
 
+Created & maintained by:
+🔷 Mikey-7X  
+GitHub: https://github.com/mikey-7x  
+Date:9/12/2025
 All rights reserved.  
-This project may be used, modified, and distributed under the terms of the **MIT License** (recommended for open-source hardware-software toolchains).
 
 Mikey:hexoid is built from the idea that
 
