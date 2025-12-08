@@ -672,14 +672,129 @@ HEX uploaders on Android (external, optional):
 
 ## 🛡 License Notice
 
-This project embeds or interacts with open-source components under their respective licenses:
+Copyright © 2025 Mikey-7X  
+All Rights Reserved  
+“Mikey:hexoid” and its associated logo are trademarks of Mikey-7X.
 
-- Arduino Core & Tools — **LGPL / GPL / Creative Commons**  
-- ARM GCC — **GNU GPL v3**  
-- Python packages (rich, pygments, pyserial) — **MIT**  
+----------------------------------------------------------------------
+SECTION 1 — OWNERSHIP
+----------------------------------------------------------------------
 
-All original logic, converters, build systems, STM32 Mikey Core, and CLI system are **© 2025 Mikey**.
+“Mikey:hexoid” (including all scripts, code, algorithms, libraries, 
+documentation, banner artwork, AI-generated content, and design 
+elements) is proprietary software created and owned by Mikey-7X.
 
-Unauthorized commercial use without permission is prohibited.
+All intellectual property rights are retained by the author.
+
+No rights are granted except those explicitly written below.
+
+----------------------------------------------------------------------
+SECTION 2 — PERMITTED USE
+----------------------------------------------------------------------
+
+You are allowed to:
+
+• Download and install Mikey:hexoid  
+• Use the software for personal, educational, and research purposes  
+• Compile your own Arduino/AVR/STM32 sketches using this toolkit  
+• Generate HEX files for your microcontrollers  
+
+The following MUST remain intact:
+
+• Copyright notice  
+• This license file  
+• Author attribution: “Created by Mikey-7X”  
+
+----------------------------------------------------------------------
+SECTION 3 — STRICTLY PROHIBITED ACTIONS
+----------------------------------------------------------------------
+
+Without explicit written permission from the author (Mikey-7X), you 
+may NOT:
+
+• Copy, clone, fork, or redistribute this project or its source code  
+• Upload or host this project on any other platform  
+• Modify, alter, or create derivative works  
+• Use this software in commercial products or services  
+• Sell, rent, sublicense, or repackage this project  
+• Reverse-engineer or attempt to extract proprietary logic  
+• Reuse the project name “Mikey:hexoid” or its trademark  
+
+Any violation constitutes infringement and may lead to legal action.
+
+----------------------------------------------------------------------
+SECTION 4 — THIRD-PARTY TOOLS & ATTRIBUTIONS
+----------------------------------------------------------------------
+
+Mikey:hexoid internally uses—and is compatible with—several external
+open-source tools and compilers. These tools are NOT included as part 
+of Mikey:hexoid’s proprietary code. They remain the intellectual 
+property of their respective owners under their own licenses:
+
+• **Arduino CLI** — © Arduino LLC / Arduino Srl  
+  Licensed under the GNU General Public License (GPL v3)
+
+• **avr-gcc / arm-none-eabi-gcc** — © Free Software Foundation  
+  Licensed under GNU GPL and GNU LGPL
+
+• **MiniCore / MegaCore / MightyCore / MicroCore** (for AVR chips)  
+  © MCUdude (GitHub: MCUdude) — Various open-source licenses
+
+• **pyserial, rich, pygments** — © Respective Python package authors  
+  Licensed under open-source terms (BSD, MIT)
+
+• **dfu-util / stm32flash / stlink-tools**  
+  © Their respective maintainers — various open-source licenses
+
+These tools are **not modified** or redistributed by Mikey:hexoid.
+They are executed as external dependencies under their respective 
+licenses.
+
+Mikey:hexoid contains only proprietary automation, compilation 
+orchestration logic, UI/UX design, conversion engines, and support 
+systems written by Mikey-7X.
+
+----------------------------------------------------------------------
+SECTION 5 — WARRANTY DISCLAIMER
+----------------------------------------------------------------------
+
+THIS SOFTWARE IS PROVIDED “AS IS,” WITHOUT ANY WARRANTY OF ANY KIND.
+
+The author makes no guarantees regarding:
+
+• Accuracy of generated HEX/BIN files  
+• Compatibility with third-party upload tools  
+• Safety in hardware usage  
+• Absence of bugs or interruptions  
+
+Use of this software is entirely at your own risk.
+
+----------------------------------------------------------------------
+SECTION 6 — TRADEMARK NOTICE
+----------------------------------------------------------------------
+
+“Mikey:hexoid™” is an unregistered trademark of Mikey-7X.
+
+You may NOT:
+
+• Use the name or logo  
+• Create similar branding  
+• Impersonate the project  
+
+----------------------------------------------------------------------
+SECTION 7 — REQUESTING PERMISSION
+----------------------------------------------------------------------
+
+To request commercial use rights, redistribution, or collaboration,
+contact:
+
+  Author: Mikey-7X  
+  Email: (you can add it here later)
+
+Only written approval is legally valid.
+
+----------------------------------------------------------------------
+END OF LICENSE
+----------------------------------------------------------------------
 
 ---
