@@ -610,33 +610,6 @@ Sensors, displays, communication protocols.
 
 Integrated docs per MCU preset.
 
-
-
----
-
-❤️ Credits
-
-Designed & tested by Mikey
-(Professional electronics engineer / Diploma in E&C / B.Tech Electronics student)
-with lots of real hardware experiments on:
-
-Arduino Uno
-
-ATmega8A bare chip
-
-STM32 Bluepill
-
-Android phone + Termux + Debian
-
-
-Mikey:hexoid is built from the idea that
-
-> “Your phone can be your entire lab.”
-
-
-
-
----
 ---
 
 ## 🧾 Copyright & Authors
@@ -647,6 +620,10 @@ Electronics Engineer (Diploma E&C) | B.Tech Electronics | Embedded Systems Devel
 
 All rights reserved.  
 This project may be used, modified, and distributed under the terms of the **MIT License** (recommended for open-source hardware-software toolchains).
+
+Mikey:hexoid is built from the idea that
+
+> “Your phone can be your entire lab.”
 
 ---
 
