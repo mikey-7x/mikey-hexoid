@@ -661,8 +661,7 @@ HEX uploaders on Android (external, optional):
 | Tool | Purpose | Play Store Link |
 |------|---------|----------------|
 | **ZFlasher AVR** | Upload HEX to AVR / USBasp / Arduino | https://play.google.com/store/apps/details?id=ru.zdevs.zflasheravr |
-| **STM32 Utils** | Upload HEX/BIN to STM32 (USB/Serial/DFU) | 
-https://play.google.com/store/apps/details?id=com.martinloren.stm32utils |
+| **STM32 Utils** | Upload HEX/BIN to STM32 (USB/Serial/DFU) | https://play.google.com/store/apps/details?id=com.martinloren.stm32utils |
 
 *(These apps are not part of Mikey:hexoid — they are optional flash tools used by many embedded engineers.)*
 
