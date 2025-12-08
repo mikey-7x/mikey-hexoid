@@ -315,6 +315,7 @@ Then test:
   mhex doctor
   mhex new blink
   mhex compile blink --preset uno
+  
 ==============================================
 
 3️⃣ Refresh environment
