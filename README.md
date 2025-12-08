@@ -797,4 +797,7 @@ Only written approval is legally valid.
 END OF LICENSE
 ----------------------------------------------------------------------
 
+This software is protected under international copyright laws.
+Unauthorized distribution or modification will result in legal action.
+
 ---
