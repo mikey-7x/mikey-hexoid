@@ -2,6 +2,25 @@
 
 > **Multi-MCU HEX compiler toolkit for Arduino, AVR & STM32 – optimized for Termux/Debian on ARM64**
 
+<p align="center">
+  <img src="https://i.imgur.com/3C9Lsmk.png" width="180px" alt="Mikey:hexoid Logo">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/8BYWMCE.png" width="220px" alt="Mikey:hexoid Logo">
+</p>
+
+
+
+<p align="center">
+  <img src="https://i.imgur.com/3Hxnvf1.png" width="200px" alt="Mikey:hexoid Logo">
+</p>
+
+
+
+
+
+
 [![Install Mikey:hexoid](https://img.shields.io/badge/Install-Mikey:hexoid-blue?style=for-the-badge&logo=gnubash&color=0b8043)](https://raw.githubusercontent.com/mikey-7x/mikey-hexoid/main/mikey-hexoid-install.sh)
 [![Platform](https://img.shields.io/badge/Platform-ARM64_(Termux%2FDebian)-orange?style=for-the-badge&logo=linux)](#)
 [![Language](https://img.shields.io/badge/Made%20with-Bash_+_Python3-3776AB?style=for-the-badge&logo=python)](#)
