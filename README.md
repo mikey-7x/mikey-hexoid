@@ -58,7 +58,7 @@ Typical problems when trying to do embedded development on Android/Termux:
 
 ---
 
-## 🧠 How it Works (High Level)
+## ⚙️ How it Works (High Level)
 
 ### Internally, Mikey:hexoid:
 
@@ -183,7 +183,7 @@ You work directly with registers like RCC_APB2ENR, GPIOC_CRH, GPIOC_ODR.
 2. Mikey STM32 Core (Arduino-like, MCU pin names)
 
 High-level API:
-
+```
 #include "mikey_core.h"
 
 void setup(void) {
@@ -196,7 +196,7 @@ void loop(void) {
     digitalWrite(PC13, LOW);
     delay(300);
 }
-
+```
 Support for:
 
 PC13, PA0, PA8, analogRead(PA0), analogWrite(PA8, 128), millis(), delay(), etc.
@@ -209,8 +209,10 @@ PC13, PA0, PA8, analogRead(PA0), analogWrite(PA8, 128), millis(), delay(), etc.
 🟨 Smart Converters
 
 Arduino → STM32 Mikey:
-
+```
 mhex convert-arduino-to-stm32 blink bp_from_blink
+```
+where 'blink' is .ino file and it converts to hex of 'bp_from_blink'(rename of 'blink') which is compiled for stm32 modules 
 
 Converts .ino → sketch.c for STM32 Mikey core.
 
@@ -218,9 +220,9 @@ Auto-adds includes, tries to map functions, builds project, and mirrors HEX.
 
 
 STM32 Mikey → Arduino:
-
+```
 mhex convert-stm32-to-arduino bluepill2 blink_from_bluepill2
-
+```
 Converts STM32 Mikey core code into Arduino sketch.
 
 If build fails, logs the exact issue and where to edit.
@@ -233,9 +235,9 @@ If build fails, logs the exact issue and where to edit.
 🟥 ZIP Library Installer
 
 Install custom or community libraries:
-
+```
 mhex lib-add-zip
-
+```
 Asks for folder path (e.g. /sdcard/Download).
 
 Lists all .zip files.
@@ -292,15 +294,15 @@ On Android, recommended: Termux + Debian (proot-distro)
 
 
 1️⃣ Download installer script
-
+```
 cd ~
 curl -LO https://raw.githubusercontent.com/mikey-7x/mikey-hexoid/main/mikey-hexoid-install.sh
 chmod +x mikey-hexoid-install.sh
-
+```
 2️⃣ Run the installer
-
+```
 ./mikey-hexoid-install.sh
-
+```
 You should see something like:
 
 ==============================================
@@ -316,13 +318,13 @@ Then test:
 ==============================================
 
 3️⃣ Refresh environment
-
+```
 source ~/.bashrc
-
+```
 4️⃣ Verify installation
-
+```
 mhex doctor
-
+```
 You should see cores like:
 
 arduino:avr
@@ -333,7 +335,7 @@ MicroCore:avr
 attiny:avr
 
 And config JSON similar to:
-
+```
 "presets": {
   "uno": {"type": "avr", "fqbn": "arduino:avr:uno"},
   "nano": {"type": "avr", "fqbn": "arduino:avr:nano"},
@@ -365,25 +367,26 @@ And config JSON similar to:
   }
 }
 
+```
 
 ---
 
 📚 Command Reference & Examples
 
 🔹 1. Create a new Arduino sketch
-
+```
 mhex new blink
-
+```
 This creates:
 
 ~/mikey-hexoid/sketches/blink/blink.ino
 
 Edit it:
-
+```
 nano ~/mikey-hexoid/sketches/blink/blink.ino
-
+```
 Example content:
-
+```
 int led = 13;
 
 void setup() {
@@ -396,14 +399,14 @@ void loop() {
   digitalWrite(led, LOW);
   delay(500);
 }
-
+```
 
 ---
 
 🔹 2. Compile for Arduino Uno
-
+```
 mhex compile blink --preset uno
-
+```
 Output:
 
 [✔] Compile OK
@@ -416,9 +419,9 @@ You can now upload blink.ino.hex using ZFlasher AVR, etc.
 ---
 
 🔹 3. Compile for ATmega8A (bare chip, 16 MHz external)
-
+```
 mhex compile blink --preset atmega8a
-
+```
 Same Arduino code, but HEX is built for ATmega8A
 → confirmed working on real hardware with 16 MHz crystal.
 
@@ -426,9 +429,9 @@ Same Arduino code, but HEX is built for ATmega8A
 ---
 
 🔹 4. Compile for ATmega328P bare chip
-
+```
 mhex compile blink --preset atmega328p-bare
-
+```
 Again, same .ino code.
 
 
@@ -437,15 +440,15 @@ Again, same .ino code.
 🔹 5. STM32 – Mikey Core (Arduino-style, MCU pins)
 
 Create project:
-
+```
 mhex stm32-mikey-init bluepill2
-
+```
 Edit:
-
+```
 nano ~/mikey-hexoid/sketches/bluepill2_stm32_mikey/sketch.c
-
+```
 Example:
-
+```
 #include "mikey_core.h"
 
 void setup(void) {
@@ -458,11 +461,11 @@ void loop(void) {
     digitalWrite(PC13, LOW);
     delay(300);
 }
-
+```
 Build:
-
+```
 mhex stm32-mikey-build bluepill2
-
+```
 HEX will appear in both:
 
 ~/mikey-hexoid/hex/
@@ -473,18 +476,18 @@ and
 ---
 
 🔹 6. STM32 – Bare-Metal
-
+```
 mhex stm32-bare-init f103test
 nano ~/mikey-hexoid/sketches/f103test_stm32_bare/main.c
 mhex stm32-bare-build f103test
-
+```
 
 ---
 
 🔹 7. Arduino → STM32 Conversion
-
+```
 mhex convert-arduino-to-stm32 blink bluepill_from_blink
-
+```
 Creates a Mikey STM32 project.
 
 Converts .ino → sketch.c.
@@ -496,9 +499,9 @@ Builds and mirrors HEX.
 ---
 
 🔹 8. STM32 → Arduino Conversion
-
+```
 mhex convert-stm32-to-arduino bluepill2 blink_from_bluepill2
-
+```
 If build fails:
 
 You get:
