@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Copyright © 2025 Yogesh R. Chauhan (mikey-7x or mikey)
 # mikey:hexoid – full installer v4.0.0
 # Target: Debian inside Termux on ARM64 (aarch64)
 
