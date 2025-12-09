@@ -536,6 +536,7 @@ Select ZIP by number.
 
 It will install into ~/mikey-hexoid/libs/arduino/.
 
+---
 
 
 ---
@@ -558,6 +559,192 @@ Change external hex dir (optional):
 
 mhex config-hex-dir "/storage/emulated/0/Android/media/hex files"
 
+---
+
+✅ How STM32 board selection works in mikey:hexoid
+
+Unlike AVR (which uses Arduino FQBN presets), STM32 in mikey:hexoid uses backend type + MCU model:
+
+mikey:hexoid supports 2 STM32 backends:
+
+Backend	Purpose	Arduino-like?
+
+mikey	Arduino-style API (pinMode, digitalWrite)	✔ Yes
+bare	Pure C CMSIS startup	❌ No (Low-level)
+
+
+mikey:hexoid presets look like:
+```
+"bluepill": {
+    "type": "stm32",
+    "backend": "mikey",
+    "mcu": "stm32f103c8"
+},
+"f103-bare": {
+    "type": "stm32",
+    "backend": "bare",
+    "mcu": "stm32f103c8"
+},
+"blackpill-f401": {
+    "type": "stm32",
+    "backend": "mikey",
+    "mcu": "stm32f401"
+},
+"blackpill-f411": {
+    "type": "stm32",
+    "backend": "mikey",
+    "mcu": "stm32f411"
+},
+"nucleo-f103": {
+    "type": "stm32",
+    "backend": "mikey",
+    "mcu": "stm32f103rb"
+},
+"nucleo-f401": {
+    "type": "stm32",
+    "backend": "mikey",
+    "mcu": "stm32f401re"
+}
+
+```
+---
+
+✅ 1. Check all supported STM32 boards
+
+Run:
+```
+mhex boards
+```
+Example output:
+```
+Available Presets:
+  bluepill → STM32F103C8 (Mikey Core)
+  f103-bare → STM32F103C8 (Bare-metal)
+  blackpill-f401 → STM32F401 (Mikey Core)
+  blackpill-f411 → STM32F411 (Mikey Core)
+  nucleo-f103 → STM32F103RB (Mikey Core)
+  nucleo-f401 → STM32F401RE (Mikey Core)
+
+```
+---
+
+✅ 2. How to create a new STM32 project for a specific board
+
+Example: Bluepill (F103C8)
+```
+mhex stm32-mikey-init blue_test --preset bluepill
+```
+
+For Blackpill F401:
+```
+mhex stm32-mikey-init myF401 --preset blackpill-f401
+```
+
+For Nucleo F401RE:
+```
+mhex stm32-mikey-init myNucleo --preset nucleo-f401
+```
+
+---
+
+✅ 3. How to build for that board
+```
+mhex stm32-mikey-build blue_test
+```
+
+It automatically detects the preset you used during “init”.
+
+
+---
+
+❗ IMPORTANT
+
+Do NOT use --preset for STM32 builds.
+Presets are used only during project creation.
+
+After project is created, the metadata inside the project folder stores the board type.
+
+
+---
+
+💡 4. How to compile STM32 without presets (manual way)
+
+If you want to force a build for any STM32 MCU:
+```
+mhex stm32-mikey-build myproj --mcu stm32f411 --backend mikey
+```
+
+or bare-metal:
+```
+mhex stm32-bare-build myproj --mcu stm32f103c8
+
+```
+---
+
+🎯 5. Adding more STM32 boards (custom presets)
+
+If your board is not listed, create your own preset:
+```
+mhex preset-add f446-black \
+  --type stm32 \
+  --backend mikey \
+  --mcu stm32f446re
+```
+
+Check:
+
+mhex boards
+
+Now create projects for that board:
+```
+mhex stm32-mikey-init test446 --preset f446-black
+```
+
+---
+
+✔ Supported MCU models
+
+You can build for any STM32F0, F1, F3, F4 (most common ones):
+
+Examples:
+
+stm32f030f4
+
+stm32f051
+
+stm32f103c8
+
+stm32f103rb
+
+stm32f401cc
+
+stm32f401re
+
+stm32f411ce
+
+stm32f446re
+
+stm32f407vg
+
+
+Just specify them in preset or manual build.
+
+
+---
+
+⭐ Summary
+
+To select STM32 board:
+
+Step	Command
+
+See all boards:	mhex boards
+Create project:	
+mhex stm32-mikey-init myproj --preset bluepill
+Build project:
+mhex stm32-mikey-build myproj
+Add new board:
+mhex preset-add <name> --type stm32 --backend mikey --mcu <chip>
 
 ---
 
