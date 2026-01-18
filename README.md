@@ -992,7 +992,7 @@ To request commercial use rights, redistribution, or collaboration,
 contact:
 
   Author: Mikey-7X  
-  Email: (you can add it here later)
+  Email: chauhanyogesh9825@gmail.com
 
 Only written approval is legally valid.
 
