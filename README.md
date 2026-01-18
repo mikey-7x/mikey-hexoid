@@ -310,17 +310,19 @@ You should see something like:
  mikey:hexoid v4.0.0 installation complete!
 
 Open a NEW shell or run:
-
+```
   source ~/.bashrc
-
+```
 Then test:
-
+```
   mhex doctor
-  
+```
+```
   mhex new blink
-  
+```
+  ```
   mhex compile blink --preset uno
-  
+  ```
 ==============================================
 
 3️⃣ Refresh environment
